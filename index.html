@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kitty Quiz</title>
+<style>
+body {
+background-image: url(bg.jpg);
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 50px;
+height: 250px;
+text-align: center;
+font-size: 50px;
+background: beige;
+background-image: url("lotta.jpg");
+color: black; 
+}
+  
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+    h1 {
+        margin-top: 60px;
+    }
+    
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+</style>
+
+
+</head>
+
+<body>
+<div id="main"><!-- open main div -->
+<div id="header"><!-- open header div -->
+<h1>Kitty Quiz</h1>
+</div><!-- close header div -->
+
+
+<form id="form1">
+
+<h2>What is "Making bisquits?"</h2>
+<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />When you train a cat to literally make bisquits for you</label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />When they poop</label>
+<label for="var_info"><input type="radio" name="variable" value="10" id="var_info" />When a cat moves his two front paws in a kneading motion </label>
+<label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>When they lay down in a "loaf" shape</label>
+
+<h2>What is a sploot?</h2>
+<label for="sub_string"><input type="radio" name="sub" value="10" id="sub_string"/>When they stretch so their bellies are flat on the ground and their back legs are pointing behind them. </label>
+<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>Another word for a snout</label>
+<label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />When your pet runs on a wooden floor and doesn't move</label>
+<label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />When your pet drools</label>
+
+<h2>What are mlems?</h2>
+<label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />When animals rub their ear with their paw</label>
+<label for="cat_join"><input type="radio" name="con" value="10" id="cat_join" />When animals lick</label>
+<label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />When animals kneed their paws</label>
+<label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />When dogs make funny noises</label>
+
+<h2>What is a blep?</h2>
+<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />When you smoosh an animals face fat together</label>
+<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />When animals fall asleep with their eyes open</label>
+<label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />When dogs howl</label>
+<label for="if_condition"><input type="radio" name="ifstate"  value="10" id="if_condition" />That accidental tongue-hanging-out moment</label>
+
+  <h2>What is a boop?</h2>
+<label for="dub_string"><input type="radio" name="dub" value="0" id="dub_string" />When dogs misbehave but its cute so you bop their head gently</label>
+<label for="dub_join"><input type="radio" name="dub" value="0" id="dub_join" />When kitties run into things and fall over</label>
+<label for="dub_info"><input type="radio" name="dub" value="0" id="dub_info" />When cats put their paw on your head</label>
+<label for="dub_condition"><input type="radio" name="dub"  value="10" id="dub_condition" />To bop something on the nose or bop something with your nose</label>
+  
+  <h2>What is a floof?</h2>
+<label for="dog_string"><input type="radio" name="dog" value="0" id="dog_string" />Doge the meme</label>
+<label for="dog_join"><input type="radio" name="dog" value="0" id="dog_join" />Long haired cats</label>
+<label for="dog_info"><input type="radio" name="dog" value="0" id="dog_info" />Hairballs</label>
+<label for="dog_condition"><input type="radio" name="dog"  value="10" id="dog_condition" />When they have have coats so voluminous that hair appears to make up the bulk of their bodyweight</label>
+
+  <h2>What does smol mean?</h2>
+<label for="kor_string"><input type="radio" name="korea" value="10" id="korea_string" />Funny way of saying the word small</label>
+<label for="kor_join"><input type="radio" name="korea" value="0" id="korea_join" />When animals smell funny</label>
+<label for="kor_info"><input type="radio" name="korea" value="0" id="korea_info" />When cats eat lilies and have acute kidney failure</label>
+<label for="kor_condition"><input type="radio" name="korea"  value="0" id="korea_condition" />When cats excel in both the tiny and cute departments</label>
+
+  <h2>What is the cutest type of cat?</h2>
+<label for="jap_string"><input type="radio" name="japan" value="0" id="japan_string" />Siamese cats</label>
+<label for="jap_join"><input type="radio" name="japan" value="0" id="japan_join" />Domestic shorthair</label>
+<label for="jap_info"><input type="radio" name="japan" value="10" id="japan_info" />Trick question, literally any cat of any age</label>
+<label for="jap_condition"><input type="radio" name="japan"  value="0" id="japan_condition" />Baby cats</label>
+ 
+  <h2>What is the best breed of dog?</h2>
+<label for="rino_string"><input type="radio" name="rino" value="0" id="rino_string" />Boxer</label>
+<label for="rino_join"><input type="radio" name="rino" value="0" id="rino_join" />Bulldog</label>
+<label for="rino_info"><input type="radio" name="rino" value="0" id="rino_info" />German Shepherd</label>
+<label for="rino_condition"><input type="radio" name="rino"  value="10" id="rino_condition" />Cats</label>
+
+  <h2>What is your favorite sound?</h2>
+<label for="pup_string"><input type="radio" name="pup" value="0" id="pup_string" />Your baby's laugh</label>
+<label for="pup_join"><input type="radio" name="pup" value="10" id="pup_join" />Cat purrs</label>
+<label for="pup_info"><input type="radio" name="pup" value="0" id="pup_info" />Winning in slots</label>
+<label for="pup_condition"><input type="radio" name="pup"  value="0" id="pup_condition" />Music by Tears for Fears</label>
+  
+ 
+  <button type="submit" value="Submit">Submit</button>
+
+</form>
+
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div><!-- close main div -->
+  
+<script>
+// add script here to make quiz interactive
+  document.getElementById("form1").onsubmit=function() {
+    
+       if(document.querySelector('input[name = "variable"]:checked') &&  document.querySelector('input[name = "sub"]:checked') && document.querySelector('input[name = "con"]:checked') &&  document.querySelector('input[name = "ifstate"]:checked') && document.querySelector('input[name = "dub"]:checked') &&  document.querySelector('input[name = "dog"]:checked') && document.querySelector('input[name = "korea"]:checked') &&  document.querySelector('input[name = "japan"]:checked') && document.querySelector('input[name = "rino"]:checked') &&  document.querySelector('input[name = "pup"]:checked')){
+          
+
+	   
+      
+     variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+     dub = parseInt(document.querySelector('input[name = "dub"]:checked').value);
+     dog = parseInt(document.querySelector('input[name = "dog"]:checked').value);
+     korea = parseInt(document.querySelector('input[name = "korea"]:checked').value);
+     japan = parseInt(document.querySelector('input[name = "japan"]:checked').value);
+	   rino = parseInt(document.querySelector('input[name = "rino"]:checked').value);
+     pup = parseInt(document.querySelector('input[name = "pup"]:checked').value);
+    
+    result = variable + sub + con + ifstate + dub + dog + korea + japan + rino + pup; 
+    
+    document.getElementById("grade").innerHTML = result;
+	   
+    
+
+ grading = [
+  	 {score:0, feedback:"You must be a dog person and thats not a good thing.", image:"cat4.jpg"},
+     {score:10,feedback:"Literally what are you doing", image: "catroomguardian.jpg"},
+	   {score:20,feedback:"You dont even care about cats do you?", image: "crying.jpg"},
+	   {score:30,feedback:"Stop being lazy and pay attention to cats.", image: "cat2.jpg"},
+	   {score:40,feedback:"You've got to be kitting me.", image: "cat3.jpg"},
+	   {score:50,feedback:"Not good enough", image: "cat7.jpg"},
+	   {score:60,feedback:"Im judging you", image: "thumb.jpg"},
+     {score:70,feedback:"You've just discovered the joy of cats", image: "waffle.jpg"},
+	   {score:80,feedback:"Getting closer", image: "cat1.jpg"},
+     {score:90,feedback:"You're the rootinist tootinist Katboy in the west", image: "katboy.jpg"},
+	   {score:100,feedback:"Nailed it. Cat officianado.", image: "cat5.jpg"},
+ ];
+ 
+
+	  
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+    result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
+	  }
+	  }
+
+ 
+document.getElementById("grade2").innerHTML = result2;
+  }
+      else {
+    alert("Fill out all questions before submitting.");
+}
+return false; // required to not refresh the page; just leave this here
+  }
+
+
+</script>
+</body>
+</html>
